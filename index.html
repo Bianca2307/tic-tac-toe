@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main class="background">
+        <section class="title">
+            <h1> Tic Tac Toe </h1>
+        </section>
+        <section class="display">
+            Player <span class="display-player player--X">X</span>'s turn
+        </section>
+        <section class="container">
+          <div class="tile" id="cell-0-0" onclick="play(0,0)"></div>
+          <div class="tile" id="cell-0-1" onclick="play(0,1)"></div>
+          <div class="tile" id="cell-0-2" onclick="play(0,2)"></div>
+          <div class="tile" id="cell-1-0" onclick="play(1,0)"></div>
+          <div class="tile" id="cell-1-1" onclick="play(1,1)" ></div>
+          <div class="tile" id="cell-1-2" onclick="play(1,2)"></div>
+          <div class="tile" id="cell-2-0" onclick="play(2,0)"></div>
+          <div class="tile" id="cell-2-1" onclick="play(2,1)"></div>
+          <div class="tile" id="cell-2-2" onclick="play(2,2)"></div>
+
+
+        </section>
+
+        <section class="display announcer hide">You win!</section>
+        <section class="controls">
+            <button id="reset">Reset</button>
+        </section>
+    </main>
+   
+
+
+   <script src="script.js"></script>
+  </body>
+</html>
